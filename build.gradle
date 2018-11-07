@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.1.0.RELEASE'
+    id "io.spring.dependency-management" version "1.0.6.RELEASE"
+}
+
+group 'ResatsProjects'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+//    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+
+bootJar {
+    mainClassName = 'com.rtgames.finerdash.controller.SayHello'
+    launchScript()
+}
