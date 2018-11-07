@@ -10,7 +10,7 @@ public class SayHello {
 
     @RequestMapping("/")
     String home() {
-        return "Welcome to FinerDash! <hr> Check back in 5 years and you won'tbelieve your eyes :))))";
+        return "Welcome to FinerDash! <hr> Check back soon... and you won't believe your eyes!";
     }
 
     public static void main(String[] args) throws Exception {
